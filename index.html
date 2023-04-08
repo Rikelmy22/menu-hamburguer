@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsivo</title>
+    <!--O link do import do icon menu-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Meu site
+        </h1>
+        <!--O script vai ser executado com essa função que vai ser escrita nesse elemento do icon-->
+        <span id="burguer" class="material-icons" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="items">
+          <ul>
+              <li><a href="#">Opção 1</a></li>
+              <li><a href="#">Opção 2</a></li>
+              <li><a href="#">Opção 3</a></li>
+              <li><a href="#">Opção 4</a></li>
+          </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>
+                Teste de media queries
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat ipsa quam, culpa facere cumque sit, dicta deserunt, illo corrupti aperiam asperiores pariatur facilis excepturi incidunt iure id. Accusantium, aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab obcaecati libero id quos mollitia aliquam praesentium officiis ut aut dolor sunt saepe quis magni necessitatibus impedit, consequatur molestias maiores doloribus?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat ipsa quam, culpa facere cumque sit, dicta deserunt, illo corrupti aperiam asperiores pariatur facilis excepturi incidunt iure id. Accusantium, aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab obcaecati libero id quos mollitia aliquam praesentium officiis ut aut dolor sunt saepe quis magni necessitatibus impedit, consequatur molestias maiores doloribus?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat ipsa quam, culpa facere cumque sit, dicta deserunt, illo corrupti aperiam asperiores pariatur facilis excepturi incidunt iure id. Accusantium, aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab obcaecati libero id quos mollitia aliquam praesentium officiis ut aut dolor sunt saepe quis magni necessitatibus impedit, consequatur molestias maiores doloribus?
+            </p>
+        </article>
+    </main>
+    <!--Scrpit para esconder e expor as opções do menu-->
+    <script>
+        function clickMenu() {
+         if (items.style.display == 'block') {
+            items.style.display = 'none'
+         }
+         else (items.style.display = 'block')
+        }
+    </script>
+</body>
+</html>
